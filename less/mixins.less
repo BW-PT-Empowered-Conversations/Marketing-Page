@@ -1,1 +1,51 @@
 /* Mixins.less */
+.flexr {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.flexc {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.flexcr {
+		display: flex;
+		flex-direction: column-reverse;
+		justify-content: space-around;
+	}
+
+.button(@textcolor, @bgcolor, @wide) {
+  color: @textcolor;
+  background-color: @bgcolor;
+  width: @wide;
+  font-size: 1.8rem;
+  font-weight: bold;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1.2vh;
+  border-radius: 5px;
+  border: 1px solid @bgcolor;
+  @media @phone {
+	width: 100%;
+  }
+
+  a {
+	text-decoration: none;
+	color: @textcolor;
+  }
+
+  &:hover {
+	color: @bgcolor;
+	background-color: @textcolor;
+	.rubberBand(2s, 0s);
+
+	a {
+		text-decoration: none;
+		color: @bgcolor
+	}
+  }
+}
