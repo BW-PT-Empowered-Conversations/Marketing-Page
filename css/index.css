@@ -520,17 +520,20 @@ html {
   color: #FFFFFF;
 }
 .header {
-  color: black;
+  color: #FFFFFF;
   background-color: orange;
-  background-image: url('../images/sunburst.png');
+  background-image: url('../images/hero_shadows.jpeg');
   background-position: center;
   background-size: cover;
   width: 100%;
+  height: 50vh;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  align-items: flex-end;
 }
 .header .title {
   font-size: 4.2rem;
+  font-family: 'komika_titleregular';
 }
