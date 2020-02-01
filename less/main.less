@@ -21,13 +21,16 @@ html {
   .header__title {
     font-size: @font-size-h1;
     font-family: @font-header;
+    text-align: center;
     margin: 0;
     padding: 0;
+    line-height: 1;
   }
 
   .header__subtitle {
     font-size: @font-size-h2;
     font-family: @font-header;
+    text-align: center;
     margin: 0;
     padding: 0;
   }
@@ -40,6 +43,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 1vh;
 
   .section__title {
     font-size: @font-size-h2;
@@ -48,10 +52,49 @@ html {
 
   .section__text {
     font-size: 1.6rem;
+    font-family: @font-text;
   }
 }
 
 .section--orange {
   background-color: @bgcolor;
   color: @textcolor;
+}
+
+.bubble {
+  margin: 0;
+  padding: 0vh 10vw 8vh 12vw;
+  min-height: 20vh;
+  color: @textcolor;
+  background-image:url(../images/speechbubble.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  .flexc();
+
+  .bubble__title {
+    font-size: @font-size-h2;
+    font-family: @font-header;
+  }
+
+  .bubble__text {
+    font-size: 1.6rem;
+    font-family: @font-text;
+  }
+}
+
+.bubble--wtitle {
+  background-image:url(../images/speechbubble_wtitle.png);
+}
+
+.bubble--flipped {
+  transform:scaleX(-1);
+  padding: 0vh 12vw 8vh 10vw;
+
+  .bubble__title {
+    transform:scaleX(-1);
+  }
+  .bubble__text {
+    transform:scaleX(-1);
+  }
 }

@@ -537,12 +537,15 @@ html {
 .header .header__title {
   font-size: 4.2rem;
   font-family: 'komika_titleregular';
+  text-align: center;
   margin: 0;
   padding: 0;
+  line-height: 1;
 }
 .header .header__subtitle {
   font-size: 2.8rem;
   font-family: 'komika_titleregular';
+  text-align: center;
   margin: 0;
   padding: 0;
 }
@@ -553,6 +556,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 1vh;
 }
 .section .section__title {
   font-size: 2.8rem;
@@ -560,8 +564,43 @@ html {
 }
 .section .section__text {
   font-size: 1.6rem;
+  font-family: 'komika_textregular';
 }
 .section--orange {
   background-color: orange;
   color: black;
+}
+.bubble {
+  margin: 0;
+  padding: 0vh 10vw 8vh 12vw;
+  min-height: 20vh;
+  color: black;
+  background-image: url(../images/speechbubble.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.bubble .bubble__title {
+  font-size: 2.8rem;
+  font-family: 'komika_titleregular';
+}
+.bubble .bubble__text {
+  font-size: 1.6rem;
+  font-family: 'komika_textregular';
+}
+.bubble--wtitle {
+  background-image: url(../images/speechbubble_wtitle.png);
+}
+.bubble--flipped {
+  transform: scaleX(-1);
+  padding: 0vh 12vw 8vh 10vw;
+}
+.bubble--flipped .bubble__title {
+  transform: scaleX(-1);
+}
+.bubble--flipped .bubble__text {
+  transform: scaleX(-1);
 }
