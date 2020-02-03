@@ -625,6 +625,12 @@ html {
 }
 .section--orange .button:hover {
   color: #FFFFFF;
+  -webkit-animation-name: rubberBand;
+  animation-name: rubberBand;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
 }
 .section--wsubsections {
   display: flex;
@@ -639,6 +645,13 @@ html {
   align-self: center;
   text-align: center;
   margin-bottom: 2vh;
+}
+@media (max-width: 796px) {
+  .section--wsubsections {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
 }
 .section__subsection {
   border: 3px solid black;
@@ -658,6 +671,12 @@ html {
 .section__subsection .headshot__name {
   font-family: 'komika_titleregular';
   font-size: 2.8rem;
+}
+@media (max-width: 796px) {
+  .section__subsection {
+    width: 97%;
+    margin: 2vh 0;
+  }
 }
 .bubble {
   margin: 2vh;

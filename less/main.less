@@ -120,6 +120,7 @@ html {
 
       &:hover {
         color: @white;
+        .rubberBand(2s, 0s);
       }
     }
   }
@@ -134,6 +135,10 @@ html {
       align-self: center;
       text-align: center;
       margin-bottom: 2vh;
+    }
+
+    @media @phone {
+      .flexc();
     }
   }
 
@@ -154,6 +159,11 @@ html {
     .headshot__name {
       font-family: @font-header;
       font-size: @font-size-h2;
+    }
+
+    @media @phone {
+      width: 97%;
+      margin: 2vh 0;
     }
   }
 }
