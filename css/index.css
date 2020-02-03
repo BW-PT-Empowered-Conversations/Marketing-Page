@@ -523,7 +523,6 @@ html {
   color: #FFFFFF;
   background-color: #000000;
   width: 100%;
-  height: 60vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -531,11 +530,10 @@ html {
   justify-content: flex-end;
   line-height: 1;
 }
-.header .header__image {
+.header__image {
   width: 100%;
-  height: 50vh;
 }
-.header .header__title {
+.header__title {
   font-size: 4.2rem;
   font-family: 'komika_titleregular';
   text-align: center;
@@ -543,27 +541,46 @@ html {
   padding: 0;
   line-height: 1;
 }
-.header .header__subtitle {
+.header__subtitle {
   font-size: 2.8rem;
   font-family: 'komika_titleregular';
   text-align: center;
   margin: 0;
   padding: 0;
 }
+.header__nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2vh;
+  width: 50%;
+}
+.header__nav__item {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-family: 'komika_textregular';
+}
+.header__nav__item:hover {
+  color: orange;
+}
 .section {
-  margin: 5vh;
-  padding: 2vh;
+  margin: 4vh 4vw;
+  padding: 2vh 2vw;
   background-image: url(../images/bg-orange.png);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 1vh;
 }
-.section .section__title {
+.section__title {
+  margin: 4vh 0 0 0;
+  padding: 0 0;
   font-size: 2.8rem;
   font-family: 'komika_titleregular';
 }
-.section .section__text {
+.section__text {
   font-size: 1.6rem;
   font-family: 'komika_textregular';
 }
@@ -571,9 +588,22 @@ html {
   background-color: orange;
   color: black;
 }
+.section--orange .button {
+  font-family: 'komika_titleregular';
+  font-size: 2.8rem;
+  border: 5px solid black;
+  padding: 0 1.3vw 0.5vh 2vw;
+  border-radius: 2vh;
+  background-color: black;
+  color: orange;
+  text-decoration: none;
+}
+.section--orange .button:hover {
+  color: #FFFFFF;
+}
 .bubble {
-  margin: 0;
-  padding: 0vh 10vw 8vh 12vw;
+  margin: 2vh;
+  padding: 0 2vw 4vh 6vw;
   min-height: 20vh;
   color: black;
   background-image: url(../images/speechbubble.png);
@@ -583,13 +613,14 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  max-width: 300px;
+  float: right;
+  width: 27%;
 }
-.bubble .bubble__title {
+.bubble__title {
   font-size: 2.8rem;
   font-family: 'komika_titleregular';
 }
-.bubble .bubble__text {
+.bubble__text {
   font-size: 1.6rem;
   font-family: 'komika_textregular';
 }
@@ -598,11 +629,21 @@ html {
 }
 .bubble--flipped {
   transform: scaleX(-1);
-  padding: 0vh 12vw 8vh 10vw;
+  padding: 0vh 4vw 4vh 4vw;
+  float: left;
 }
 .bubble--flipped .bubble__title {
   transform: scaleX(-1);
 }
 .bubble--flipped .bubble__text {
   transform: scaleX(-1);
+}
+.image {
+  width: 98%;
+  border: 3px solid black;
+  margin: 4vh 4vw;
+  float: left;
+}
+.image--right {
+  float: right;
 }
