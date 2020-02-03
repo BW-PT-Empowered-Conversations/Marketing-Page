@@ -48,10 +48,16 @@ html {
     }
 
     &__item {
-      color: @white;
+      color: @nav-font;
       text-decoration: none;
       font-size: 2.2rem;
       font-family: @font-text;
+      border-left: 1px dotted @nav-border;
+      padding: 0 4vw;
+
+      &:first-child {
+        border-left: 0;
+      }
 
       @media @phone {
         font-size: 2.8rem;
@@ -59,6 +65,7 @@ html {
         border-bottom: 1px dotted orange;
         width: 100%;
         text-align: center;
+        border-left: 0;
 
         &:first-child {
           border-top: 1px dotted orange;
@@ -66,7 +73,7 @@ html {
       }
 
       &:hover {
-        color: orange;
+        color: @nav-hover;
       }
     }
   }
@@ -91,25 +98,62 @@ html {
   &__text {
     font-size: 1.6rem;
     font-family: @font-text;
+
+    &--strong {
+      font-family: @font-text-strong;
+    }
   }
-}
 
-.section--orange {
-  background-color: @bgcolor;
-  color: @textcolor;
+  &--orange {
+    background-color: @bgcolor;
+    color: @textcolor;
 
-  .button {
-    font-family: @font-header;
-    font-size: @font-size-h2;
-    border: 5px solid black;
-    padding: 0 1.3vw 0.5vh 2vw;
-    border-radius: 1vh;
-    background-color: @textcolor;
-    color: @bgcolor;
-    text-decoration: none;
+    .button {
+      font-family: @font-header;
+      font-size: @font-size-h2;
+      border: 5px solid black;
+      padding: 0 1.3vw 0.5vh 2vw;
+      border-radius: 1vh;
+      background-color: @textcolor;
+      color: @bgcolor;
+      text-decoration: none;
 
-    &:hover {
-      color: @white;
+      &:hover {
+        color: @white;
+      }
+    }
+  }
+
+  &--wsubsections {
+    .flexr();
+    flex-wrap: wrap;
+    padding: 0 2vw 2vh 2vw;
+
+    .section__title {
+      width: 100%;
+      align-self: center;
+      text-align: center;
+      margin-bottom: 2vh;
+    }
+  }
+
+  &__subsection {
+    border: 3px solid black;
+    padding: 1vh 1vw;
+    width: 30%;
+    background: white;
+    color: black;
+    .flexc();
+    align-items: center;
+
+    .headshot {
+      width: 95%;
+      border: 2px solid black;
+    }
+
+    .headshot__name {
+      font-family: @font-header;
+      font-size: @font-size-h2;
     }
   }
 }
