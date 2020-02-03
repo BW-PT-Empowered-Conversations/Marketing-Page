@@ -556,11 +556,30 @@ html {
   margin-top: 2vh;
   width: 50%;
 }
+@media (max-width: 796px) {
+  .header__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
 .header__nav__item {
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
   font-family: 'komika_textregular';
+}
+@media (max-width: 796px) {
+  .header__nav__item {
+    font-size: 2.8rem;
+    padding: 2vh;
+    border-bottom: 1px dotted orange;
+    width: 100%;
+    text-align: center;
+  }
+  .header__nav__item:first-child {
+    border-top: 1px dotted orange;
+  }
 }
 .header__nav__item:hover {
   color: orange;
@@ -593,7 +612,7 @@ html {
   font-size: 2.8rem;
   border: 5px solid black;
   padding: 0 1.3vw 0.5vh 2vw;
-  border-radius: 2vh;
+  border-radius: 1vh;
   background-color: black;
   color: orange;
   text-decoration: none;
@@ -624,6 +643,11 @@ html {
   font-size: 1.6rem;
   font-family: 'komika_textregular';
 }
+@media (max-width: 796px) {
+  .bubble {
+    width: 87%;
+  }
+}
 .bubble--wtitle {
   background-image: url(../images/speechbubble_wtitle.png);
 }
@@ -639,11 +663,7 @@ html {
   transform: scaleX(-1);
 }
 .image {
-  width: 98%;
+  width: 100%;
   border: 3px solid black;
-  margin: 4vh 4vw;
-  float: left;
-}
-.image--right {
-  float: right;
+  margin: auto;
 }
