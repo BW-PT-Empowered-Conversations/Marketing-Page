@@ -11,6 +11,10 @@
         text-align: center;
         color: #583e53;
         text-shadow: 1px 1px 2px wheat;
+
+        @media (min-width: 501px) {
+            font-size: 7.2rem;
+        }
     }
 
     .feature {
@@ -22,6 +26,12 @@
             padding: 45px 65px;
         }
 
+        div {
+            @media (min-width: 501px) {
+                width: 35%;
+            }
+        }
+
         .feature-graphic {
             max-width: 100%;
             margin-bottom: 15px;
@@ -31,14 +41,18 @@
             }
         }
 
-        h3{
+        h3 {
             font-size: 3.4rem;
             margin-bottom: 15px;
+
+            @media (min-width: 501px) {
+                font-size: 4.8rem;
+            }
         }
 
-        div {
+        p {
             @media (min-width: 501px) {
-                width: 35%;
+                font-size: 1.8rem;
             }
         }
     }

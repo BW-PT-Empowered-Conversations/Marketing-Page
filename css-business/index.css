@@ -194,6 +194,11 @@ header .header div a {
   color: #583e53;
   text-shadow: 1px 1px 2px wheat;
 }
+@media (min-width: 501px) {
+  #key-features h2 {
+    font-size: 7.2rem;
+  }
+}
 #key-features .feature {
   width: 85%;
   margin: 50px 0;
@@ -202,6 +207,11 @@ header .header div a {
   #key-features .feature {
     height: 450px;
     padding: 45px 65px;
+  }
+}
+@media (min-width: 501px) {
+  #key-features .feature div {
+    width: 35%;
   }
 }
 #key-features .feature .feature-graphic {
@@ -218,8 +228,13 @@ header .header div a {
   margin-bottom: 15px;
 }
 @media (min-width: 501px) {
-  #key-features .feature div {
-    width: 35%;
+  #key-features .feature h3 {
+    font-size: 4.8rem;
+  }
+}
+@media (min-width: 501px) {
+  #key-features .feature p {
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 501px) {
