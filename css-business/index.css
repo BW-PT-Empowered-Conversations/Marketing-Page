@@ -188,13 +188,8 @@ header .header div a {
   text-shadow: 1px 1px 2px wheat;
   padding: 0 1.5%;
 }
-@media (max-width: 500px) {
-  #key-features {
-    padding: 0 1.5%;
-  }
-}
 #key-features h2 {
-  font-size: 4.8rem;
+  font-size: 5.2rem;
   text-align: center;
   color: #583e53;
   text-shadow: 1px 1px 2px wheat;
@@ -203,13 +198,54 @@ header .header div a {
   width: 85%;
   margin: 50px 0;
 }
+@media (min-width: 501px) {
+  #key-features .feature {
+    height: 450px;
+    padding: 45px 65px;
+  }
+}
 #key-features .feature .feature-graphic {
   max-width: 100%;
   margin-bottom: 15px;
 }
+@media (min-width: 501px) {
+  #key-features .feature .feature-graphic {
+    display: none;
+  }
+}
 #key-features .feature h3 {
   font-size: 3.4rem;
   margin-bottom: 15px;
+}
+@media (min-width: 501px) {
+  #key-features .feature div {
+    width: 35%;
+  }
+}
+@media (min-width: 501px) {
+  #key-features .feature:nth-child(2) {
+    background-image: url("../images-business/header-image-5.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 501px) {
+  #key-features .feature:nth-child(3) {
+    background-image: url("../images-business/features-1.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+  #key-features .feature:nth-child(3) div {
+    float: right;
+    text-align: right;
+  }
+}
+@media (min-width: 501px) {
+  #key-features .feature:nth-child(4) {
+    background-image: url("../images-business/features-3.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
 }
 #key-features .invert {
   align-self: flex-end;

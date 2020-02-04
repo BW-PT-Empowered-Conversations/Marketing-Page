@@ -6,12 +6,8 @@
     text-shadow: 1px 1px 2px wheat;
     padding: 0 1.5%;
 
-    @media (max-width: 500px) {
-        padding: 0 1.5%;
-    }
-
     h2 {
-        font-size: 4.8rem;
+        font-size: 5.2rem;
         text-align: center;
         color: #583e53;
         text-shadow: 1px 1px 2px wheat;
@@ -21,14 +17,58 @@
         width: 85%;
         margin: 50px 0;
 
+        @media (min-width: 501px) {
+            height: 450px;
+            padding: 45px 65px;
+        }
+
         .feature-graphic {
             max-width: 100%;
             margin-bottom: 15px;
+
+            @media (min-width: 501px) {
+                display: none;
+            }
         }
 
         h3{
             font-size: 3.4rem;
             margin-bottom: 15px;
+        }
+
+        div {
+            @media (min-width: 501px) {
+                width: 35%;
+            }
+        }
+    }
+
+    .feature:nth-child(2) {
+        @media (min-width: 501px) {
+            background-image: url("../images-business/header-image-5.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+        }
+    }
+
+    .feature:nth-child(3) {
+        @media (min-width: 501px) {
+            background-image: url("../images-business/features-1.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
+
+            div {
+                float: right;
+                text-align: right;
+            }
+        }
+    }
+
+    .feature:nth-child(4) {
+        @media (min-width: 501px) {
+            background-image: url("../images-business/features-3.jpg");
+            background-size: 100% auto;
+            background-repeat: no-repeat;
         }
     }
 
