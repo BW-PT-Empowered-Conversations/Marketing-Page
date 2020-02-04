@@ -1,0 +1,19 @@
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerBackground(@gradient1, @gradient2, @url, @size, @positionX: 0, @positionY: 0) {
+    background: linear-gradient(@gradient1, transparent 90%), 
+        linear-gradient(0deg, @gradient2, transparent), 
+        url(@url);
+    background-size: @size;
+    background-position: @positionX @positionY;
+    background-repeat: no-repeat;
+}
+
+.backgroundFullWidth(@url) {
+    background-image: url(@url);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}

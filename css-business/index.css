@@ -1,3 +1,7 @@
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -135,29 +139,49 @@ html body {
   font-weight: 700;
   font-style: italic;
 }
+.current-page {
+  text-decoration: underline;
+}
 header {
   width: 100%;
 }
-header .header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  margin-bottom: 100px;
-}
 @media (max-width: 500px) {
-  header .header {
-    background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, #fff, transparent), url("../images-business/header-image-6.jpg");
+  header {
+    background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, white, transparent), url("../images-business/header-image-6.jpg");
     background-size: auto 100%;
     background-position: 60% 0;
     background-repeat: no-repeat;
   }
 }
 @media (min-width: 501px) {
-  header .header {
-    background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, #fff, transparent), url("../images-business/header-image-7.jpg");
+  header {
+    background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, white, transparent), url("../images-business/header-image-7.jpg");
     background-size: 100% auto;
+    background-position: 0 0;
     background-repeat: no-repeat;
   }
+}
+header nav {
+  display: flex;
+  flex-direction: row-reverse;
+  padding: 15px;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li {
+  padding: 5px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: wheat;
+}
+header .header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin-bottom: 100px;
 }
 header .header div {
   margin: 0 auto;
@@ -187,6 +211,7 @@ header .header div a {
   color: #583e53;
   text-shadow: 1px 1px 2px wheat;
   padding: 0 1.5%;
+  margin-bottom: 75px;
 }
 #key-features h2 {
   font-size: 5.2rem;
@@ -264,4 +289,21 @@ header .header div a {
 }
 #key-features .invert {
   align-self: flex-end;
+}
+.call-2-action {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+.call-2-action h2 {
+  font-size: 4.8rem;
+}
+.call-2-action div:nth-child(2) {
+  width: 35%;
+}
+.call-2-action .c2a-button a {
+  text-decoration: none;
 }
