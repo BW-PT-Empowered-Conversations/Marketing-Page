@@ -157,7 +157,7 @@ header {
   header {
     background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, white, transparent), url("../images-business/header-image-7.jpg");
     background-size: 100% auto;
-    background-position: 0 0;
+    background-position: initial;
     background-repeat: no-repeat;
   }
 }
