@@ -1,0 +1,274 @@
+/************************/
+/* variables and mixins */
+/************************/
+/* colors */
+/* theme */
+:root {
+  --nav-bg: #424953;
+  --nav-text: #f0f0f0;
+  --nav-hover: #B0AE99;
+  --nav-btm-border: #0f0f0f;
+  --card-lt-bg: #B0AE99;
+  --card-lt-text: #0f0f0f;
+  --card-dk-bg: #424953;
+  --card-dk-text: #f0f0f0;
+}
+/* mixins */
+.link {
+  text-decoration: none;
+}
+/*********/
+/* RESET */
+/*********/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/******************************************/
+/* typography, "top level" element styles */
+/******************************************/
+html,
+body {
+  background: #B0AE99;
+}
+/*
+header {
+    background-image: url('../img/hero-sm.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 240px;
+}
+*/
+/* layout modules */
+/* 
+-------------------
+- components.less -
+-------------------
+
+component blocks, elements and modifiers 
+*/
+/* Navigation */
+.c-nav {
+  background: var(--nav-bg);
+  border-bottom: solid 1px var(--nav-btm-border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.c-nav__item {
+  padding: 1rem;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.c-nav__link {
+  text-decoration: none;
+  color: var(--nav-text);
+  font-size: 0.75rem;
+  font-family: sans-serif;
+}
+.c-nav__link:hover {
+  color: var(--nav-hover);
+}
+/* Splash Image */
+.c-splash__img {
+  width: 100%;
+  height: auto;
+}
+.c-splash__header {
+  padding: 1rem;
+}
+.c-splash__text {
+  padding: 1rem;
+}
+/* Card */
+.c-card {
+  max-width: 500px;
+}
+.c-card--1 .c-card__img {
+  background-image: url('../img/1.png');
+}
+.c-card--2 .c-card__img {
+  background-image: url('../img/2.png');
+}
+.c-card--3 .c-card__img {
+  background-image: url('../img/3.png');
+}
+.c-card--4 .c-card__img {
+  background-image: url('../img/4.png');
+}
+.c-card--lt {
+  background-color: var(--card-lt-bg);
+  color: var(--card-lt-text);
+}
+.c-card--dk {
+  background-color: var(--card-dk-bg);
+  color: var(--card-dk-text);
+}
+.c-card__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 330px;
+}
+.c-card__header {
+  padding: 1rem;
+}
+.c-card__text {
+  padding: 1rem;
+}
