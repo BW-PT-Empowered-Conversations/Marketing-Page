@@ -215,11 +215,11 @@ header .header div a {
 #key-features {
   display: flex;
   flex-direction: column;
-  padding: 25px 0;
+  padding: 2.5rem 0;
   color: #583e53;
-  text-shadow: 1px 1px 2px wheat;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
   padding: 0 1.5%;
-  margin-bottom: 75px;
+  margin-bottom: 7.5rem;
 }
 #key-features h2 {
   font-size: 5.2rem;
@@ -234,7 +234,7 @@ header .header div a {
 }
 #key-features .feature {
   width: 85%;
-  margin: 50px 0;
+  margin: 5rem 0;
 }
 @media (min-width: 1060px) {
   #key-features .feature {
@@ -249,7 +249,7 @@ header .header div a {
 }
 #key-features .feature .feature-graphic {
   max-width: 100%;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 1060px) {
   #key-features .feature .feature-graphic {
@@ -258,7 +258,7 @@ header .header div a {
 }
 #key-features .feature h3 {
   font-size: 3.4rem;
-  margin-bottom: 15px;
+  margin-bottom: 1.5rem;
 }
 @media (min-width: 1060px) {
   #key-features .feature h3 {
@@ -313,12 +313,14 @@ header .header div a {
   font-size: 6.4rem;
   margin-bottom: 25px;
   color: #583e53;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
 }
 .call-2-action .action-container {
   display: flex;
   flex-direction: column;
   height: 40%;
   color: #583e53;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
 }
 @media (max-width: 500px) {
   .call-2-action .action-container {
@@ -342,18 +344,19 @@ header .header div a {
 }
 .call-2-action .action-container .c2a-button {
   border: 5px solid #583e53;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   width: 70%;
   margin: 0 auto;
 }
 .call-2-action .action-container .c2a-button a {
   text-decoration: none;
   color: #583e53;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
   font-size: 5.2rem;
 }
 footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 50px;
+  height: 5rem;
 }
