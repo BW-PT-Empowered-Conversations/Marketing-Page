@@ -240,6 +240,7 @@ header .header div a {
   #key-features .feature {
     height: 450px;
     padding: 45px 65px;
+    border-bottom: solid 0.5rem #583e53;
   }
 }
 @media (min-width: 1060px) {
@@ -250,6 +251,7 @@ header .header div a {
 #key-features .feature .feature-graphic {
   max-width: 100%;
   margin-bottom: 1.5rem;
+  border-bottom: solid 0.2rem #583e53;
 }
 @media (min-width: 1060px) {
   #key-features .feature .feature-graphic {
@@ -305,7 +307,7 @@ header .header div a {
   align-items: center;
   text-align: center;
   height: 100vh;
-  background: linear-gradient(white, transparent 100%), url("../images-business/action-background.jpeg");
+  background: linear-gradient(white, transparent 35%), url("../images-business/action-background.jpeg");
   background-size: cover;
   background-repeat: no-repeat;
 }
