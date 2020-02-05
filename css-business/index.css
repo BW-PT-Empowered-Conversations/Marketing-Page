@@ -301,17 +301,59 @@ header .header div a {
 .call-2-action {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   text-align: center;
   height: 100vh;
+  background: linear-gradient(white, transparent 100%), url("../images-business/action-background.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .call-2-action h2 {
-  font-size: 4.8rem;
+  font-size: 6.4rem;
+  margin-bottom: 25px;
+  color: #583e53;
 }
-.call-2-action div:nth-child(2) {
-  width: 35%;
+.call-2-action .action-container {
+  display: flex;
+  flex-direction: column;
+  height: 40%;
+  color: #583e53;
 }
-.call-2-action .c2a-button a {
+@media (max-width: 500px) {
+  .call-2-action .action-container {
+    width: 100vw;
+  }
+}
+@media (min-width: 501px) and (max-width: 1059px) {
+  .call-2-action .action-container {
+    width: 80vw;
+  }
+}
+@media (min-width: 1060px) {
+  .call-2-action .action-container {
+    width: 40vw;
+  }
+}
+.call-2-action .action-container p {
+  margin: 10% auto;
+  width: 70%;
+  font-size: 2.2rem;
+}
+.call-2-action .action-container .c2a-button {
+  border: 5px solid #583e53;
+  border-radius: 15px;
+  width: 70%;
+  margin: 0 auto;
+}
+.call-2-action .action-container .c2a-button a {
   text-decoration: none;
+  color: #583e53;
+  font-size: 5.2rem;
+}
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 50px;
 }

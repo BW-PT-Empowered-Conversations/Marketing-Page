@@ -2,15 +2,15 @@ header {
     width: 100%;
 
     @media @mobile {
-        .headerBackground(@headerBlue, white, @headerMobile, @fullHeight, 60% 0);
+        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerMobile, @fullHeight, 60% 0);
     }
 
     @media @midSized {
-        .headerBackground(@headerBlue, white, @headerDesktop, @fullHeight, 60% 0);
+        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, @fullHeight, 60% 0);
     }
 
     @media @desktop {
-        .headerBackground(@headerBlue, white, @headerDesktop, @fullWidth);
+        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, @fullWidth);
     }
     
     nav {
