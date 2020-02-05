@@ -240,7 +240,6 @@ header .header div a {
   #key-features .feature {
     height: 450px;
     padding: 45px 65px;
-    border-bottom: solid 0.5rem #583e53;
   }
 }
 @media (min-width: 1060px) {
