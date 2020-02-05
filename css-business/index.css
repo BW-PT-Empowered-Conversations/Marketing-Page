@@ -153,7 +153,15 @@ header {
     background-repeat: no-repeat;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 501px) and (max-width: 1059px) {
+  header {
+    background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, white, transparent), url("../images-business/header-image-7.jpg");
+    background-size: auto 100%;
+    background-position: 60% 0;
+    background-repeat: no-repeat;
+  }
+}
+@media (min-width: 1060px) {
   header {
     background: linear-gradient(#147490, transparent 90%), linear-gradient(0deg, white, transparent), url("../images-business/header-image-7.jpg");
     background-size: 100% auto;
@@ -219,7 +227,7 @@ header .header div a {
   color: #583e53;
   text-shadow: 1px 1px 2px wheat;
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features h2 {
     font-size: 7.2rem;
   }
@@ -228,13 +236,13 @@ header .header div a {
   width: 85%;
   margin: 50px 0;
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature {
     height: 450px;
     padding: 45px 65px;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature div {
     width: 35%;
   }
@@ -243,7 +251,7 @@ header .header div a {
   max-width: 100%;
   margin-bottom: 15px;
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature .feature-graphic {
     display: none;
   }
@@ -252,24 +260,24 @@ header .header div a {
   font-size: 3.4rem;
   margin-bottom: 15px;
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature h3 {
     font-size: 4.8rem;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature p {
     font-size: 1.8rem;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature:nth-child(2) {
     background-image: url("../images-business/header-image-5.jpg");
     background-size: 100% auto;
     background-repeat: no-repeat;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature:nth-child(3) {
     background-image: url("../images-business/features-1.jpg");
     background-size: 100% auto;
@@ -280,7 +288,7 @@ header .header div a {
     text-align: right;
   }
 }
-@media (min-width: 501px) {
+@media (min-width: 1060px) {
   #key-features .feature:nth-child(4) {
     background-image: url("../images-business/features-3.jpg");
     background-size: 100% auto;
