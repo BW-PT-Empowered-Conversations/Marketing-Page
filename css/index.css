@@ -8,6 +8,8 @@
   --nav-text: #f0f0f0;
   --nav-hover: #1467af;
   --nav-btm-border: #0f0f0f;
+  --nav-active: #C7790A;
+  --nav-active-hover: #f39611;
   --splash-bg: #B0AE99;
   --splash-header: #0f0f0f;
   --splash-text: #424953;
@@ -222,6 +224,12 @@ component blocks, elements and modifiers
 .c-nav__item:hover {
   background-color: var(--nav-hover);
 }
+.c-nav__item--active {
+  background-color: var(--nav-active);
+}
+.c-nav__item--active:hover {
+  background-color: var(--nav-active-hover);
+}
 .c-nav__link {
   text-decoration: none;
   font-family: 'Martel Sans', sans-serif;
@@ -369,5 +377,13 @@ component blocks, elements and modifiers
   font-family: 'Martel Sans', sans-serif;
   font-size: 1rem;
   font-weight: 400;
+  padding: 1rem;
+}
+/* other pages header */
+.c-header__header {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
   padding: 1rem;
 }

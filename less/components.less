@@ -22,6 +22,12 @@ component blocks, elements and modifiers
         &:hover {
             background-color: var(--nav-hover);
         }
+        &--active {
+            background-color: var(--nav-active);
+            &:hover {
+                background-color: var(--nav-active-hover);
+            }   
+        }
     }
 
     &__link {
@@ -184,4 +190,13 @@ component blocks, elements and modifiers
     text-align: center;
     .martel-sans;
     padding: 1rem;
+}
+
+/* other pages header */
+.c-header {
+    &__header {
+        .martel-sans(2rem, 400);
+        text-align: center;
+        padding: 1rem;
+    }
 }
