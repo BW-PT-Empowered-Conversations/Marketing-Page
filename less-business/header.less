@@ -6,11 +6,11 @@ header {
     }
 
     @media @midSized {
-        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, @fullHeight, 60% 0);
+        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, cover, 60% 0);
     }
 
     @media @desktop {
-        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, @fullWidth);
+        .headerBackground(@blueHeaderGradient, @whiteHeaderGradient, @headerDesktop, cover);
     }
     
     nav {
@@ -28,6 +28,9 @@ header {
                 a {
                     text-decoration: none;
                     color: wheat;
+                    font-size: 2.2rem;
+                    padding: 0 1rem;
+                    text-shadow: 0.08rem 0.08rem 0.2rem @featurePurple;
 
                     &:hover {
                         text-decoration: underline;
@@ -51,12 +54,14 @@ header {
                 font-size: 4.8rem;
                 color: wheat;
                 margin-bottom: 1.5rem;
+                text-shadow: 0.1rem 0.1rem 0.2rem @featurePurple;
             }
 
             h2 {
                 font-size: 3.2rem;
                 color: wheat;
                 margin-bottom: 2.5rem;
+                text-shadow: 0.1rem 0.1rem 0.2rem @featurePurple;
             }
 
             a {
@@ -65,6 +70,7 @@ header {
                 border: solid 0.1rem wheat;
                 border-radius: 1.5rem;
                 padding: 0.5rem 1.5rem;
+                text-shadow: 0.08rem 0.08rem 0.2rem @featurePurple;
 
                 &:hover {
                     background-color: wheat;
