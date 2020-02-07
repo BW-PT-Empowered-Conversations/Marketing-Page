@@ -1,0 +1,51 @@
+/************************/
+/* variables and mixins */
+/************************/
+
+/* colors */
+
+@classic-blue: #0f4c81;
+@hot-toddy: #C7790A;
+@mako: #424953;
+@taupe-gray: #B0AE99;
+@white: rgb(94%, 94%, 94%);
+@black: rgb(6%, 6%, 6%);
+
+/* theme */
+:root {
+    --nav-bg: @classic-blue;
+    --nav-text: @white;
+    --nav-hover: lighten(@classic-blue, 10%);
+    --nav-btm-border: @black;
+    --nav-active: @hot-toddy;
+    --nav-active-hover: lighten(@hot-toddy, 10%);
+
+    --splash-bg: @taupe-gray;
+    --splash-header: @black;
+    --splash-text: @mako;
+
+    --card-lt-bg: @taupe-gray;
+    --card-lt-header: @black;
+    --card-lt-text: @mako;
+
+    --card-dk-bg: @mako;
+    --card-dk-header: @white;
+    --card-dk-text: @taupe-gray;
+
+    --button-bg: @classic-blue;
+    --button-hover-bg: lighten(@classic-blue, 10%);
+    --button-text: @white;
+
+    --footer-bg: @classic-blue;
+    --footer-text: @white;
+}
+
+/* media */
+@medium: ~'only screen and (min-width: 500px)';
+@large: ~'only screen and (min-width: 800px)';
+@xl: ~'only screen and (min-width: 1200px)';
+
+/* mixins */
+.link {
+    text-decoration: none;
+}
