@@ -1,0 +1,373 @@
+/************************/
+/* variables and mixins */
+/************************/
+/* colors */
+/* theme */
+:root {
+  --nav-bg: #0f4c81;
+  --nav-text: #f0f0f0;
+  --nav-hover: #1467af;
+  --nav-btm-border: #0f0f0f;
+  --splash-bg: #B0AE99;
+  --splash-header: #0f0f0f;
+  --splash-text: #424953;
+  --card-lt-bg: #B0AE99;
+  --card-lt-header: #0f0f0f;
+  --card-lt-text: #424953;
+  --card-dk-bg: #424953;
+  --card-dk-header: #f0f0f0;
+  --card-dk-text: #B0AE99;
+  --button-bg: #0f4c81;
+  --button-hover-bg: #1467af;
+  --button-text: #f0f0f0;
+  --footer-bg: #0f4c81;
+  --footer-text: #f0f0f0;
+}
+/* media */
+/* mixins */
+.link {
+  text-decoration: none;
+}
+/*********/
+/* RESET */
+/*********/
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+body {
+  line-height: 1;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+nav ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+del {
+  text-decoration: line-through;
+}
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+input,
+select {
+  vertical-align: middle;
+}
+/******************************************/
+/* typography, "top level" element styles */
+/******************************************/
+html,
+body {
+  background: #B0AE99;
+}
+/* layout modules */
+/* 
+-------------------
+- components.less -
+-------------------
+
+component blocks, elements and modifiers 
+*/
+/* Navigation */
+.c-nav {
+  background: var(--nav-bg);
+  border-bottom: solid 1px var(--nav-btm-border);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.c-nav__item {
+  padding: 1rem;
+  width: calc(100% / 3);
+  text-align: center;
+}
+.c-nav__item:hover {
+  background-color: var(--nav-hover);
+}
+.c-nav__link {
+  text-decoration: none;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--nav-text);
+}
+/* Splash Image */
+.c-splash {
+  background: var(--splash-bg);
+  border-bottom: solid 1px #0f0f0f;
+}
+.c-splash__img {
+  width: 100%;
+  height: auto;
+}
+.c-splash__header {
+  padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--splash-header);
+}
+.c-splash__text {
+  padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--splash-text);
+}
+/* Card */
+.c-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-lt-bg);
+  color: var(--card-lt-text);
+}
+.c-card--1 .c-card__img {
+  background-image: url('../img/1.png');
+}
+.c-card--2 .c-card__img {
+  background-image: url('../img/2.png');
+}
+.c-card--3 .c-card__img {
+  background-image: url('../img/3.png');
+}
+.c-card--4 .c-card__img {
+  background-image: url('../img/4.png');
+}
+.c-card--dk {
+  background-color: var(--card-dk-bg);
+  color: var(--card-dk-text);
+}
+.c-card--dk .c-card__header {
+  color: var(--card-dk-header);
+}
+.c-card__img {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 330px;
+  border-top: solid 1px #0f0f0f;
+  border-bottom: solid 1px #0f0f0f;
+}
+@media only screen and (min-width: 500px) {
+  .c-card__img {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .c-card__img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .c-card__img {
+    min-height: 450px;
+    width: 60%;
+  }
+}
+.c-card__content {
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .c-card__content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .c-card__content {
+    width: 40%;
+  }
+}
+.c-card__header {
+  color: var(--card-lt-header);
+  padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+}
+.c-card__text {
+  padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.c-card__text--center {
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .c-card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .c-card--reverse {
+    flex-direction: row-reverse;
+  }
+}
+/* button */
+.c-button {
+  padding: 1rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: solid 1px #0f0f0f;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.c-button:hover {
+  background: var(--button-hover-bg);
+}
+/* footer */
+.c-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: solid 1px #0f0f0f;
+  text-align: center;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+}
