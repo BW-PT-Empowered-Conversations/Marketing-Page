@@ -4,9 +4,7 @@
 
 /* colors */
 
-@red: #FF1313;
-@governor-bay: #2B26B7;
-@broom: #FFE713;
+@classic-blue: #0f4c81;
 @mako: #424953;
 @taupe-gray: #B0AE99;
 @white: rgb(94%, 94%, 94%);
@@ -14,17 +12,35 @@
 
 /* theme */
 :root {
-    --nav-bg: @mako;
+    --nav-bg: @classic-blue;
     --nav-text: @white;
-    --nav-hover: @taupe-gray;
+    --nav-hover: lighten(@classic-blue, 10%);
     --nav-btm-border: @black;
 
+    --splash-bg: @taupe-gray;
+    --splash-header: @black;
+    --splash-text: @mako;
+
     --card-lt-bg: @taupe-gray;
-    --card-lt-text: @black;
+    --card-lt-header: @black;
+    --card-lt-text: @mako;
 
     --card-dk-bg: @mako;
-    --card-dk-text: @white;
+    --card-dk-header: @white;
+    --card-dk-text: @taupe-gray;
+
+    --button-bg: @classic-blue;
+    --button-hover-bg: lighten(@classic-blue, 10%);
+    --button-text: @white;
+
+    --footer-bg: @classic-blue;
+    --footer-text: @white;
 }
+
+/* media */
+@medium: ~'only screen and (min-width: 500px)';
+@large: ~'only screen and (min-width: 800px)';
+@xl: ~'only screen and (min-width: 1200px)';
 
 /* mixins */
 .link {

@@ -4,15 +4,26 @@
 /* colors */
 /* theme */
 :root {
-  --nav-bg: #424953;
+  --nav-bg: #0f4c81;
   --nav-text: #f0f0f0;
-  --nav-hover: #B0AE99;
+  --nav-hover: #1467af;
   --nav-btm-border: #0f0f0f;
+  --splash-bg: #B0AE99;
+  --splash-header: #0f0f0f;
+  --splash-text: #424953;
   --card-lt-bg: #B0AE99;
-  --card-lt-text: #0f0f0f;
+  --card-lt-header: #0f0f0f;
+  --card-lt-text: #424953;
   --card-dk-bg: #424953;
-  --card-dk-text: #f0f0f0;
+  --card-dk-header: #f0f0f0;
+  --card-dk-text: #B0AE99;
+  --button-bg: #0f4c81;
+  --button-hover-bg: #1467af;
+  --button-text: #f0f0f0;
+  --footer-bg: #0f4c81;
+  --footer-text: #f0f0f0;
 }
+/* media */
 /* mixins */
 .link {
   text-decoration: none;
@@ -186,14 +197,6 @@ html,
 body {
   background: #B0AE99;
 }
-/*
-header {
-    background-image: url('../img/hero-sm.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    min-height: 240px;
-}
-*/
 /* layout modules */
 /* 
 -------------------
@@ -216,29 +219,46 @@ component blocks, elements and modifiers
   width: calc(100% / 3);
   text-align: center;
 }
+.c-nav__item:hover {
+  background-color: var(--nav-hover);
+}
 .c-nav__link {
   text-decoration: none;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   color: var(--nav-text);
-  font-size: 0.75rem;
-  font-family: sans-serif;
-}
-.c-nav__link:hover {
-  color: var(--nav-hover);
 }
 /* Splash Image */
+.c-splash {
+  background: var(--splash-bg);
+  border-bottom: solid 1px #0f0f0f;
+}
 .c-splash__img {
   width: 100%;
   height: auto;
 }
 .c-splash__header {
   padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 2rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--splash-header);
 }
 .c-splash__text {
   padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--splash-text);
 }
 /* Card */
 .c-card {
-  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--card-lt-bg);
+  color: var(--card-lt-text);
 }
 .c-card--1 .c-card__img {
   background-image: url('../img/1.png');
@@ -252,23 +272,102 @@ component blocks, elements and modifiers
 .c-card--4 .c-card__img {
   background-image: url('../img/4.png');
 }
-.c-card--lt {
-  background-color: var(--card-lt-bg);
-  color: var(--card-lt-text);
-}
 .c-card--dk {
   background-color: var(--card-dk-bg);
   color: var(--card-dk-text);
+}
+.c-card--dk .c-card__header {
+  color: var(--card-dk-header);
 }
 .c-card__img {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 330px;
+  min-height: 330px;
+  border-top: solid 1px #0f0f0f;
+  border-bottom: solid 1px #0f0f0f;
+}
+@media only screen and (min-width: 500px) {
+  .c-card__img {
+    min-height: 400px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .c-card__img {
+    width: 70%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .c-card__img {
+    min-height: 450px;
+    width: 60%;
+  }
+}
+.c-card__content {
+  padding-bottom: 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .c-card__content {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .c-card__content {
+    width: 40%;
+  }
 }
 .c-card__header {
+  color: var(--card-lt-header);
   padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
 }
 .c-card__text {
+  padding: 1rem;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.c-card__text--center {
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .c-card {
+    flex-direction: row;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .c-card--reverse {
+    flex-direction: row-reverse;
+  }
+}
+/* button */
+.c-button {
+  padding: 1rem;
+  background: var(--button-bg);
+  color: var(--button-text);
+  border: solid 1px #0f0f0f;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.c-button:hover {
+  background: var(--button-hover-bg);
+}
+/* footer */
+.c-footer {
+  background-color: var(--footer-bg);
+  color: var(--footer-text);
+  border-top: solid 1px #0f0f0f;
+  text-align: center;
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
   padding: 1rem;
 }
