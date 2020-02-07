@@ -199,6 +199,14 @@ html,
 body {
   background: #B0AE99;
 }
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+main {
+  flex: 1;
+}
 /* layout modules */
 /* 
 -------------------
@@ -303,6 +311,7 @@ component blocks, elements and modifiers
 @media only screen and (min-width: 800px) {
   .c-card__img {
     width: 70%;
+    border-bottom: none;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -378,6 +387,7 @@ component blocks, elements and modifiers
   font-size: 1rem;
   font-weight: 400;
   padding: 1rem;
+  flex-shrink: 0;
 }
 /* other pages header */
 .c-header__header {
