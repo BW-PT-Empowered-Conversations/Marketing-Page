@@ -144,16 +144,19 @@
 }
 
 #mission {
-    height: 100vh;
+    padding: 5rem 0;
 
     div {
         display: flex;
         flex-direction: column;
-        width: 60%;
         margin: 0 auto;
         background-color: rgba(00, 00, 00, 0.1);
         padding: 1.5rem;
         border-radius: 1.5rem;
+
+        @media @desktop {
+            width: 60%;
+        }
 
         h2 {
             color: @featurePurple;
@@ -164,7 +167,11 @@
 
         p {
             color: @featurePurple;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
+
+            @media @desktop {
+                font-size: 1.8rem;
+            }
         }
     }
 }

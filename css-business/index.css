@@ -356,16 +356,20 @@ header .header div a {
   font-size: 5.2rem;
 }
 #mission {
-  height: 100vh;
+  padding: 5rem 0;
 }
 #mission div {
   display: flex;
   flex-direction: column;
-  width: 60%;
   margin: 0 auto;
   background-color: rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
   border-radius: 1.5rem;
+}
+@media (min-width: 1060px) {
+  #mission div {
+    width: 60%;
+  }
 }
 #mission div h2 {
   color: #583e53;
@@ -375,7 +379,12 @@ header .header div a {
 }
 #mission div p {
   color: #583e53;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
+}
+@media (min-width: 1060px) {
+  #mission div p {
+    font-size: 1.8rem;
+  }
 }
 footer {
   display: flex;
