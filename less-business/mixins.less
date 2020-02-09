@@ -1,6 +1,26 @@
-.flex-column {
+.flexColumn {
     display: flex;
     flex-direction: column;
+}
+
+.largeLightText {
+    color: wheat;
+    text-shadow: 0.1rem 0.1rem 0.2rem @featurePurple;
+}
+
+.smallLightText {
+    color: wheat;
+    text-shadow: 0.08rem 0.08rem 0.2rem @featurePurple;
+}
+
+.largeDarkText {
+    color: @featurePurple;
+    text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+}
+
+.smallDarkText {
+    color: @featurePurple;
+    text-shadow: 0.08rem 0.08rem 0.2rem wheat;
 }
 
 .headerBackground(@gradient1, @gradient2, @url, @size, @position: initial) {

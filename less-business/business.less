@@ -1,17 +1,15 @@
 #key-features {
-    .flex-column();
+    .flexColumn();
     padding: 2.5rem 0;
-    color: @featurePurple;
-    text-shadow: 0.1rem 0.1rem 0.2rem wheat;
     padding: 0 1.5%;
     margin:0 auto 7.5rem auto;
     max-width: 165rem;
+    .largeDarkText();
 
     h2 {
         font-size: 5.2rem;
         text-align: center;
-        color: @featurePurple;
-        text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+        .largeDarkText();
 
         @media @desktop {
             font-size: 7.2rem;
@@ -89,7 +87,7 @@
 }
 
 #call-2-action {
-    .flex-column();
+    .flexColumn();
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -101,15 +99,13 @@
     h2 {
         font-size: 6.4rem;
         margin-bottom: 2.5rem;
-        color: @featurePurple;
-        text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+        .largeDarkText();
     }
 
     .action-container {
-        .flex-column();
+        .flexColumn();
         height: 40%;
-        color: @featurePurple;
-        text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+        .largeDarkText();
 
         @media @mobile {
             width: 100vw;
@@ -137,9 +133,8 @@
 
             a {
                 text-decoration: none;
-                color: @featurePurple;
-                text-shadow: 0.1rem 0.1rem 0.2rem wheat;
                 font-size: 5.2rem;
+                .largeDarkText();
             }
         }
     }
@@ -149,8 +144,7 @@
     padding: 5rem 0;
 
     div {
-        display: flex;
-        flex-direction: column;
+        .flexColumn();
         margin: 0 auto;
         background-color: rgba(00, 00, 00, 0.1);
         padding: 1.5rem;
@@ -165,17 +159,15 @@
         }
 
         h2 {
-            color: @featurePurple;
             font-size: 3.2rem;
             text-align: center;
             margin-bottom: 2.5rem;
-            text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+            .largeDarkText();
         }
 
         p {
-            color: @featurePurple;
             font-size: 1.4rem;
-            text-shadow: 0.08rem 0.08rem 0.2rem wheat;
+            .smallDarkText();
 
             @media @desktop {
                 font-size: 1.8rem;

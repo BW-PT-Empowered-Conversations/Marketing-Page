@@ -1,6 +1,22 @@
-.flex-column {
+.flexColumn {
   display: flex;
   flex-direction: column;
+}
+.largeLightText {
+  color: wheat;
+  text-shadow: 0.1rem 0.1rem 0.2rem #583e53;
+}
+.smallLightText {
+  color: wheat;
+  text-shadow: 0.08rem 0.08rem 0.2rem #583e53;
+}
+.largeDarkText {
+  color: #583e53;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
+}
+.smallDarkText {
+  color: #583e53;
+  text-shadow: 0.08rem 0.08rem 0.2rem wheat;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -183,9 +199,9 @@ header nav ul li {
 }
 header nav ul li a {
   text-decoration: none;
-  color: wheat;
   font-size: 2.2rem;
   padding: 0 1rem;
+  color: wheat;
   text-shadow: 0.08rem 0.08rem 0.2rem #583e53;
 }
 header nav ul li a:hover {
@@ -203,22 +219,22 @@ header .header div {
 }
 header .header div h1 {
   font-size: 4.8rem;
-  color: wheat;
   margin-bottom: 1.5rem;
+  color: wheat;
   text-shadow: 0.1rem 0.1rem 0.2rem #583e53;
 }
 header .header div h2 {
   font-size: 3.2rem;
-  color: wheat;
   margin-bottom: 2.5rem;
+  color: wheat;
   text-shadow: 0.1rem 0.1rem 0.2rem #583e53;
 }
 header .header div a {
   text-decoration: none;
-  color: wheat;
   border: solid 0.1rem wheat;
   border-radius: 1.5rem;
   padding: 0.5rem 1.5rem;
+  color: wheat;
   text-shadow: 0.08rem 0.08rem 0.2rem #583e53;
 }
 header .header div a:hover {
@@ -229,11 +245,11 @@ header .header div a:hover {
   display: flex;
   flex-direction: column;
   padding: 2.5rem 0;
-  color: #583e53;
-  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
   padding: 0 1.5%;
   margin: 0 auto 7.5rem auto;
   max-width: 165rem;
+  color: #583e53;
+  text-shadow: 0.1rem 0.1rem 0.2rem wheat;
 }
 #key-features h2 {
   font-size: 5.2rem;
@@ -366,9 +382,9 @@ header .header div a:hover {
 }
 #call-2-action .action-container .c2a-button a {
   text-decoration: none;
+  font-size: 5.2rem;
   color: #583e53;
   text-shadow: 0.1rem 0.1rem 0.2rem wheat;
-  font-size: 5.2rem;
 }
 #mission {
   padding: 5rem 0;
@@ -392,15 +408,15 @@ header .header div a:hover {
   }
 }
 #mission div h2 {
-  color: #583e53;
   font-size: 3.2rem;
   text-align: center;
   margin-bottom: 2.5rem;
+  color: #583e53;
   text-shadow: 0.1rem 0.1rem 0.2rem wheat;
 }
 #mission div p {
-  color: #583e53;
   font-size: 1.4rem;
+  color: #583e53;
   text-shadow: 0.08rem 0.08rem 0.2rem wheat;
 }
 @media (min-width: 1060px) {
