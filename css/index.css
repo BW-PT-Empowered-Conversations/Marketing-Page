@@ -254,6 +254,10 @@ component blocks, elements and modifiers
   width: 100%;
   height: auto;
 }
+.c-splash__content {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .c-splash__header {
   padding: 1rem;
   font-family: 'Martel Sans', sans-serif;
@@ -389,11 +393,36 @@ component blocks, elements and modifiers
   padding: 1rem;
   flex-shrink: 0;
 }
-/* other pages header */
-.c-header__header {
-  font-family: 'Martel Sans', sans-serif;
-  font-size: 2rem;
-  font-weight: 400;
+/* About The Team Cards */
+.c-card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+@media only screen and (min-width: 500px) {
+  .c-card-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+.c-team-card {
+  margin: 1rem 0.5rem;
   text-align: center;
-  padding: 1rem;
+}
+@media only screen and (min-width: 500px) {
+  .c-team-card {
+    width: calc(25% - 1rem);
+  }
+}
+.c-team-card__name {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.c-team-card__job-desc {
+  font-family: 'Martel Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  font-style: italic;
 }
